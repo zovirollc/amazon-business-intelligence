@@ -4,52 +4,163 @@ brand:
   seller_id_env: "SP_API_SELLER_ID"
 
 products:
-  B0CR5D91N2:
-    name: "Zoviro Tea Tree Wipes 20ct (Pack of 10)"
-    category: "hand_wipes"
-    avg_price: 14.99
+  # ─── Body Oils ──────────────────────────────────────────────────────
+  B0GJR8435C:
+    name: "Zoviro Antioxidant Shimmer Body Oil (Silver, 3.38 fl oz)"
+    category: "body_oil"
+    avg_price: 21.99
     target_acos: 30
     primary_keywords:
-      - "hand wipes"
+      - "shimmer body oil"
+      - "body oil shimmer"
+      - "antioxidant body oil"
+      - "silver shimmer oil"
+      - "body oil for women"
+    active: true
+    competitor_filter:
+      title_exclude: ["hair oil", "essential oil", "cooking", "massage oil", "baby oil", "motor oil", "beard oil", "cuticle"]
+      title_boost: ["shimmer", "body oil", "glow", "antioxidant", "vitamin c", "lightweight", "fast absorbing", "radiant"]
+
+  B0GJQZLHNK:
+    name: "Zoviro Deep Moisture Shimmer Body Oil (Golden, 3.38 fl oz)"
+    category: "body_oil"
+    avg_price: 21.99
+    target_acos: 30
+    primary_keywords:
+      - "shimmer body oil"
+      - "golden body oil"
+      - "moisturizing body oil"
+      - "body oil for women"
+      - "glowing body oil"
+    active: true
+    competitor_filter:
+      title_exclude: ["hair oil", "essential oil", "cooking", "massage oil", "baby oil", "motor oil", "beard oil", "cuticle"]
+      title_boost: ["shimmer", "body oil", "golden", "glow", "moisture", "squalane", "ceramide", "hyaluronic", "lightweight"]
+
+  # ─── Body Lotions ───────────────────────────────────────────────────
+  B0GJR3TB2S:
+    name: "Zoviro Hydration Body Lotion (Dry & Dehydrated Skin, 6.76 fl oz)"
+    category: "body_lotion"
+    avg_price: 21.99
+    target_acos: 30
+    primary_keywords:
+      - "body lotion for dry skin"
+      - "hydrating body lotion"
+      - "moisturizing body lotion"
+      - "body lotion for women"
+      - "hyaluronic acid body lotion"
+    active: true
+    competitor_filter:
+      title_exclude: ["face lotion", "sunscreen", "self tanner", "baby lotion", "hand lotion", "foot cream", "diaper"]
+      title_boost: ["body lotion", "dry skin", "hydrating", "moisturizing", "glycerin", "hyaluronic", "non-greasy", "fast absorbing"]
+
+  B0GJPJNJ57:
+    name: "Zoviro Repair Body Lotion (Dry & Sensitive Skin, 6.76 fl oz)"
+    category: "body_lotion"
+    avg_price: 21.99
+    target_acos: 30
+    primary_keywords:
+      - "body lotion for sensitive skin"
+      - "repair body lotion"
+      - "body lotion for dry skin"
+      - "barrier repair moisturizer"
+      - "body lotion with shea butter"
+    active: true
+    competitor_filter:
+      title_exclude: ["face lotion", "sunscreen", "self tanner", "baby lotion", "hand lotion", "foot cream", "diaper"]
+      title_boost: ["body lotion", "sensitive skin", "repair", "barrier", "shea butter", "glycerin", "non-greasy", "gentle"]
+
+  # ─── Foaming Hand Sanitizers ────────────────────────────────────────
+  B0F6MN77BB:
+    name: "Zoviro Foaming Hand Sanitizer 9.5oz (Pack of 4)"
+    category: "hand_sanitizer"
+    avg_price: 25.99
+    target_acos: 30
+    primary_keywords:
+      - "foaming hand sanitizer"
+      - "alcohol free hand sanitizer"
+      - "hand sanitizer for kids"
+      - "baby safe hand sanitizer"
+    active: true
+    competitor_filter:
+      title_exclude: ["spray", "wipes", "gel", "surface", "floor", "dish", "laundry", "pet", "adult", "industrial"]
+      title_boost: ["foaming", "hand sanitizer", "alcohol free", "kids", "baby", "child", "safe", "gentle", "pump", "aloe", "moisturizing", "no rinse"]
+
+  B0F745BDP8:
+    name: "Zoviro Foaming Hand Sanitizer 9.5oz (Pack of 10)"
+    category: "hand_sanitizer"
+    avg_price: 64.99
+    target_acos: 30
+    primary_keywords:
+      - "foaming hand sanitizer"
+      - "alcohol free hand sanitizer"
+      - "hand sanitizer for kids"
+      - "baby safe hand sanitizer"
+    active: true
+    competitor_filter:
+      title_exclude: ["spray", "wipes", "gel", "surface", "floor", "dish", "laundry", "pet", "adult", "industrial"]
+      title_boost: ["foaming", "hand sanitizer", "alcohol free", "kids", "baby", "child", "safe", "gentle", "pump", "aloe", "moisturizing", "no rinse"]
+
+  # ─── Hand Sanitizer Gel ─────────────────────────────────────────────
+  B0CRSSGGYY:
+    name: "Zoviro Hand Sanitizer Gel 2oz Travel Size (Pack of 50)"
+    category: "hand_sanitizer_gel"
+    avg_price: 59.99
+    target_acos: 30
+    primary_keywords:
+      - "hand sanitizer travel size"
+      - "mini hand sanitizer"
+      - "hand sanitizer bulk"
+      - "hand sanitizer gel"
+      - "hand sanitizer travel size bulk"
+    active: true
+    competitor_filter:
+      title_exclude: ["wipes", "spray", "foam", "surface", "dish", "laundry", "pet", "baby"]
+      title_boost: ["hand sanitizer", "gel", "travel size", "mini", "bulk", "pack", "flip cap", "essential oil", "moisturizing"]
+
+  # ─── Hand Sanitizer Wipes ──────────────────────────────────────────
+  B0CR74VL95:
+    name: "Zoviro Jasmine Hand Sanitizer Wipes 80ct (Pack of 6)"
+    category: "hand_wipes"
+    avg_price: 24.99
+    target_acos: 30
+    primary_keywords:
       - "hand sanitizer wipes"
-      - "hand wipes antibacterial"
+      - "hand wipes bulk"
+      - "hand wipes for adults"
+      - "jasmine wipes"
+      - "antibacterial hand wipes"
     active: true
     competitor_filter:
       title_exclude: ["baby", "infant", "pet", "dog", "flushable", "toilet", "multi-surface", "eyelid", "lash", "makeup", "screen", "lens", "glass"]
-      title_boost: ["hand wipe", "hand sanitiz", "antibacterial", "tea tree", "sanitizing wipe", "individually wrapped", "travel", "alcohol"]
+      title_boost: ["hand wipe", "hand sanitiz", "antibacterial", "jasmine", "sanitizing wipe", "viscose", "moisturizing", "bulk"]
 
-  B0CR74VL95:
-    name: "Zoviro Jasmine Wipes 80ct (Pack of 6)"
-    category: "body_wipes"
-    avg_price: 19.99
+  B0CR5D91N2:
+    name: "Zoviro Tea Tree Hand Sanitizer Wipes 20ct (Pack of 10)"
+    category: "hand_wipes"
+    avg_price: 18.99
     target_acos: 30
     primary_keywords:
-      - "jasmine body wipes"
-      - "body wipes for women"
-      - "feminine wipes"
+      - "hand sanitizer wipes"
+      - "hand wipes"
+      - "hand wipes antibacterial"
+      - "tea tree wipes"
+      - "hand wipes travel size"
     active: true
-
-  B0CRSSGGYY:
-    name: "Zoviro Lavender Wipes"
-    category: "body_wipes"
-    primary_keywords:
-      - "lavender wipes"
-      - "body cleansing wipes"
-    active: true
-
-  B0F6MN77BB:
-    name: "Zoviro Sanitizing Wipes Bulk"
-    category: "hand_wipes"
-    primary_keywords:
-      - "sanitizing wipes bulk"
-      - "hand sanitizer wipes bulk"
-    active: true
+    competitor_filter:
+      title_exclude: ["baby", "infant", "pet", "dog", "flushable", "toilet", "multi-surface", "eyelid", "lash", "makeup", "screen", "lens", "glass"]
+      title_boost: ["hand wipe", "hand sanitiz", "antibacterial", "tea tree", "sanitizing wipe", "individually wrapped", "travel", "viscose"]
 
 our_asins:
-  - "B0CR5D91N2"
-  - "B0CR74VL95"
-  - "B0CRSSGGYY"
+  - "B0GJR8435C"
+  - "B0GJQZLHNK"
+  - "B0GJR3TB2S"
+  - "B0GJPJNJ57"
   - "B0F6MN77BB"
+  - "B0F745BDP8"
+  - "B0CRSSGGYY"
+  - "B0CR74VL95"
+  - "B0CR5D91N2"
 
 scoring:
   weights:
