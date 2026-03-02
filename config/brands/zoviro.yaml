@@ -1,0 +1,60 @@
+brand:
+  name: "Zoviro"
+  marketplace: "US"
+  seller_id_env: "SP_API_SELLER_ID"
+
+products:
+  B0CR5D91N2:
+    name: "Zoviro Tea Tree Wipes 20ct (Pack of 10)"
+    category: "hand_wipes"
+    avg_price: 14.99
+    target_acos: 30
+    primary_keywords:
+      - "hand wipes"
+      - "hand sanitizer wipes"
+      - "hand wipes antibacterial"
+    active: true
+    competitor_filter:
+      title_exclude: ["baby", "infant", "pet", "dog", "flushable", "toilet", "multi-surface", "eyelid", "lash", "makeup", "screen", "lens", "glass"]
+      title_boost: ["hand wipe", "hand sanitiz", "antibacterial", "tea tree", "sanitizing wipe", "individually wrapped", "travel", "alcohol"]
+
+  B0CR74VL95:
+    name: "Zoviro Jasmine Wipes 80ct (Pack of 6)"
+    category: "body_wipes"
+    avg_price: 19.99
+    target_acos: 30
+    primary_keywords:
+      - "jasmine body wipes"
+      - "body wipes for women"
+      - "feminine wipes"
+    active: true
+
+  B0CRSSGGYY:
+    name: "Zoviro Lavender Wipes"
+    category: "body_wipes"
+    primary_keywords:
+      - "lavender wipes"
+      - "body cleansing wipes"
+    active: true
+
+  B0F6MN77BB:
+    name: "Zoviro Sanitizing Wipes Bulk"
+    category: "hand_wipes"
+    primary_keywords:
+      - "sanitizing wipes bulk"
+      - "hand sanitizer wipes bulk"
+    active: true
+
+our_asins:
+  - "B0CR5D91N2"
+  - "B0CR74VL95"
+  - "B0CRSSGGYY"
+  - "B0F6MN77BB"
+
+scoring:
+  weights:
+    keyword_frequency: 0.40
+    bsr: 0.25
+    reviews: 0.20
+    rating: 0.15
+  title_boost_max: 20

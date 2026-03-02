@@ -1,0 +1,29 @@
+workflow:
+  id: "monthly-deep-dive"
+  schedule: "0 10 1 * *"
+  description: "Monthly deep analysis with review intelligence"
+  enabled: true
+  
+  steps:
+    - skill: "competitor-research"
+      action: "full_analysis"
+      
+    - skill: "review-intelligence"
+      action: "full_analysis"
+      depends_on: "competitor-research"
+      
+    - skill: "listing-optimization"
+      action: "full_optimization"
+      depends_on: ["competitor-research", "review-intelligence"]
+      
+    - skill: "ppc-optimization"
+      action: "full_analysis"
+
+  post_actions:
+    - type: "generate_reports"
+      config:
+        formats: ["html", "md", "xlsx"]
+    - type: "update_summaries"
+    - type: "save_snapshot"
+      config:
+        type: "weekly"

@@ -1,0 +1,19 @@
+workflow:
+  id: "daily-metrics"
+  schedule: "0 8 * * *"
+  description: "Daily PPC metrics collection + summary generation"
+  enabled: true
+  
+  steps:
+    - skill: "ppc-optimization"
+      action: "fetch_data"
+      config:
+        days_back: 31
+      
+    - action: "generate_summaries"
+      config:
+        types: ["ppc_performance", "keyword_performance"]
+
+  post_actions:
+    - type: "save_snapshot"
+    - type: "update_summaries"

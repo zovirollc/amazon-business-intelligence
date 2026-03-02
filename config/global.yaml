@@ -1,0 +1,28 @@
+platform:
+  name: "Amazon Business Intelligence"
+  version: "1.0"
+  log_level: "INFO"
+
+data_paths:
+  raw: "data/raw"
+  processed: "data/processed"
+  summaries: "data/summaries"
+  snapshots: "data/snapshots"
+  reports: "reports/output"
+
+api:
+  sp_api_timeout: 30
+  ads_api_timeout: 30
+  rate_limit_delay: 0.5
+  max_retries: 3
+  report_poll_interval: 10
+  report_timeout: 300
+
+llm:
+  summary_max_tokens: 2000
+  model: "claude-opus-4"
+
+marketplace:
+  id: "ATVPDKIKX0DER"
+  name: "US"
+  endpoint: "https://sellingpartnerapi-na.amazon.com"

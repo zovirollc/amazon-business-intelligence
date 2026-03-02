@@ -1,0 +1,28 @@
+# Template for adding new brands
+brand:
+  name: "Brand Name"
+  marketplace: "US"
+
+products:
+  ASIN_HERE:
+    name: "Product Name"
+    category: "category_name"
+    avg_price: 0.00
+    target_acos: 30
+    primary_keywords:
+      - "keyword 1"
+      - "keyword 2"
+      - "keyword 3"
+    active: true
+    competitor_filter:
+      title_exclude: []
+      title_boost: []
+
+our_asins: []
+
+scoring:
+  weights:
+    keyword_frequency: 0.40
+    bsr: 0.25
+    reviews: 0.20
+    rating: 0.15

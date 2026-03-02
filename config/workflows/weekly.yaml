@@ -1,0 +1,28 @@
+workflow:
+  id: "weekly-analysis"
+  schedule: "0 9 * * 1"
+  description: "Weekly competitor + listing analysis"
+  enabled: true
+  
+  steps:
+    - skill: "competitor-research"
+      action: "full_analysis"
+      config:
+        products: "active"
+        top_n: 20
+      
+    - skill: "listing-optimization"
+      action: "gap_analysis"
+      depends_on: "competitor-research"
+      
+    - skill: "ppc-optimization"
+      action: "full_analysis"
+      config:
+        days_back: 31
+        target_acos: 30
+
+  post_actions:
+    - type: "generate_reports"
+      config:
+        formats: ["html", "md"]
+    - type: "update_summaries"
