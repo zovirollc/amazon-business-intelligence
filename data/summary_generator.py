@@ -38,12 +38,14 @@ def generate_ppc_summary(ppc_data: dict, product_name: str = "", asin: str = "")
     lines.append("")
     lines.append("TOP WINNERS (by sales)")
     for kw in ppc_data.get('top_winners', [])[:10]:
-        lines.append(f"  • {kw.get('keyword', '')} — Sales ${kw.get('sales', 0):.2f} | ACOS {kw.get('acos', 0):.1f}%")
-    
+        name = kw.get('keyword', '') or kw.get('search_term', '')
+        lines.append(f"  • {name} — Sales ${kw.get('sales', 0):.2f} | ACOS {kw.get('acos', 0):.1f}%")
+
     lines.append("")
     lines.append("TOP NEGATIVE CANDIDATES (wasted spend)")
     for kw in ppc_data.get('negative_candidates', [])[:10]:
-        lines.append(f"  • {kw.get('keyword', '')} — Spend ${kw.get('spend', 0):.2f} | 0 sales")
+        name = kw.get('keyword', '') or kw.get('search_term', '')
+        lines.append(f"  • {name} — Spend ${kw.get('spend', 0):.2f} | 0 sales")
     
     lines.append("")
     lines.append("RECOMMENDED ACTIONS")
